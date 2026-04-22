@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Demo Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .frame-section {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+        }
+        .small-frame {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Iframe Demonstration Portal</h1>
+    </header>
+
+    <div class="container">
+        
+        <!-- Section 1: External Website -->
+        <div class="frame-section">
+            <h2>🌐 External Web Page</h2>
+            <p>Below is a Wikipedia page embedded directly into this site.</p>
+            <iframe 
+                src="https://wikipedia.org" 
+                title="External Website Example">
+            </iframe>
+        </div>
+
+        <!-- Section 2: Google Maps Embedding -->
+        <div class="frame-section">
+            <h2>📍 Embedded Google Map</h2>
+            <p>This frame displays a specific geographical location.</p>
+            <iframe 
+                src="https://google.com" 
+                allowfullscreen="" 
+                loading="lazy"
+                title="Google Maps">
+            </iframe>
+        </div>
+
+        <!-- Section 3: Local Content / Dynamic Loading -->
+        <div class="frame-section">
+            <h2>📄 Target Framing</h2>
+            <p>Click the link below to load a different page into the frame below.</p>
+            <a href="https://openstreetmap.org" target="dynamic-frame">
+                Switch to OpenStreetMap
+            </a>
+            <br><br>
+            <iframe 
+                name="dynamic-frame" 
+                class="small-frame" 
+                src="about:blank" 
+                title="Dynamic Content">
+            </iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
