@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Bootstrap Showcase</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <style>
+        .carousel-item img { height: 600px; object-fit: cover; filter: brightness(0.6); }
+        .card-img-top { height: 250px; object-fit: cover; transition: transform 0.3s ease; }
+        .card:hover .card-img-top { transform: scale(1.05); }
+        .footer-dark { background: #1a1a1a; color: #adb5bd; }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR: Sticky and Responsive -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="https://getbootstrap.com/">BOOTSTRAP_PRO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#carousel">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://getbootstrap.com">Docs</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-primary px-4" href="#">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL: High-Res Dynamic Images -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://unsplash.com" class="d-block w-100" alt="Workplace">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-3 fw-bold">Design the Future</h1>
+                    <p class="lead">Premium layouts built with the world's most popular CSS framework.</p>
+                    <a href="https://getbootstrap.com" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://unsplash.com" class="d-block w-100" alt="Technology">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-3 fw-bold">Code with Precision</h1>
+                    <p class="lead">Modular components for rapid development and deployment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GRID SYSTEM & CARDS: Professional Imagery -->
+    <section id="services" class="py-5">
+        <div class="container py-5 text-center">
+            <h2 class="fw-bold mb-5">Our Expert Solutions</h2>
+            <div class="row g-4 text-start">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm overflow-hidden border-0">
+                        <img src="https://picsum.photos" class="card-img-top" alt="Card 1">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Smart Analytics</h5>
+                            <p class="card-text text-muted">Leverage real-time data to drive your business decisions forward with integrated tools.</p>
+                            <a href="https://getbootstrap.com" class="btn btn-link p-0 text-decoration-none fw-bold">View Specs →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm overflow-hidden border-0">
+                        <img src="https://picsum.photos" class="card-img-top" alt="Card 2">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Modern UI Design</h5>
+                            <p class="card-text text-muted">Beautifully crafted interfaces designed to convert and provide an elite user experience.</p>
+                            <a href="#" class="btn btn-link p-0 text-decoration-none fw-bold">Get Started →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm overflow-hidden border-0">
+                        <img src="https://picsum.photos" class="card-img-top" alt="Card 3">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Cloud Security</h5>
+                            <p class="card-text text-muted">Scalable infrastructure with hardened security protocols to protect your sensitive data.</p>
+                            <a href="#" class="btn btn-link p-0 text-decoration-none fw-bold">Review Safety →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER: Dark Themed with Links -->
+    <footer class="footer-dark pt-5 pb-3">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-white fw-bold mb-4">BOOTSTRAP_PRO</h5>
+                    <p class="small">The ultimate toolkit for designers and developers. Built with Bootstrap 5.3 components like [Cards](https://getbootstrap.com) and the [Grid System](https://getbootstrap.com).</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-white text-uppercase mb-4">Resources</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="https://getbootstrap.com" class="text-reset text-decoration-none">Bootstrap Docs</a></li>
+                        <li><a href="https://icons.getbootstrap.com/" class="text-reset text-decoration-none">Bootstrap Icons</a></li>
+                        <li><a href="https://themes.getbootstrap.com/" class="text-reset text-decoration-none">Official Themes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-white text-uppercase mb-4">Follow Us</h6>
+                    <a href="#" class="text-reset me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-reset me-3"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-reset"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <p class="text-center mb-0 small">&copy; 2026 Bootstrap Showcase. Professional layouts for web apps.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>
